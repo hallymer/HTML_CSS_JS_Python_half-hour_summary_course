@@ -21,5 +21,7 @@
 <h4>간략한 파일 안내 및 바로가기</h4>
 
 * **001.ipynb, 002.ipynb파일**은 [30분 Python 요약 1부][Python1]의 강의내용을 수강하면서 작성한 내용입니다.
+* **003.ipynb, 004.ipynb, 005.ipynb파일**은 [30분 Python 요약 2부][Python2]의 강의내용을 수강하면서 작성한 내용입니다.
 
 [Python1]: https://youtu.be/QoBPrU3gBrk
+[Python2]: https://youtu.be/a7tk_vhO8K0
