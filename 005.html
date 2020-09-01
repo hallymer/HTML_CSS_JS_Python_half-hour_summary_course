@@ -5,8 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    table, tr, td, th{
+      border: solid 1px
+      black;
+      border-collapse : collapse;
+    }
+    /*  주석  */
+  </style>
 </head>
 <body>
-  
+  <table>
+    <!-- 주석  -->
+    <thead>
+      <tr>
+        <th>순번</th>
+        <th>책이름</th>
+        <th>가격</th>
+        <th>판매량</th>
+        <th>판매액</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Notion</td>
+        <td>7,000</td>
+        <td rowspan="2">1,000</td>
+        <td>7,000,000</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>노션</td>
+        <td>8,000</td>
+        <td>8,000,000</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">총액</td>
+        <td>15,000,000</td>
+      </tr>
+    </tfoot>
+  </table>
 </body>
 </html>
