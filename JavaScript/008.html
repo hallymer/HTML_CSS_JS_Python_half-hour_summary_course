@@ -9,7 +9,19 @@
 </head>
 
 <body>
-
+  <script>
+    var date = new Date();
+    document.write(date);
+    document.write('<br>');
+    document.write('월 : ', date.getMonth() + 1); //0부터시작함으로 +1을 해줘야한다.
+    document.write('<br>');
+    document.write('일 : ', date.getDate());
+    document.write('<br>');
+    document.write('요일 : ', date.getDay()); //일요일 = 0, 월요일 = 1, 화요일 = 2 이런식으로 된다.
+    document.write('<br>');
+    document.write('시간 : ', date.getHours());
+    document.write('<br>');
+  </script>
 </body>
 
 </html>
