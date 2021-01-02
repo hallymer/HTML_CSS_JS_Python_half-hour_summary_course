@@ -11,21 +11,17 @@
 <body>
   <script>
     var x, y;
-    x = true;
-    y = false;
-    document.write('1:', x > y);
+    x = true; //1
+    y = false; //0
+    document.write('1:', x && y); // && --> AND를 의미
+    //and는 곱하기(*)
     document.write('<br>');
-    document.write('2:', x >= y);
+    document.write('2:', x || y); // '\' + Shift --> | --> OR을 의미
+    //or은 더하기(+)
     document.write('<br>');
-    document.write('3:', x < y);
+    document.write('3:', !y);
+    //!는 not을 의미 not은 반대
     document.write('<br>');
-    document.write('4:', y <= x);
-    document.write('<br>');
-    document.write('5:', x == z); // = 등호가 2개이면 type을 확인하지 않는다
-    document.write('<br>');
-    document.write('6:', x != y);
-    document.write('<br>');
-    document.write('7:', x === z); // = 등호가 3개이면 type까지 확인
   </script>
 </body>
 
