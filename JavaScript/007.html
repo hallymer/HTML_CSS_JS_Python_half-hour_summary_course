@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var txt = 'paullab CEO leehojun';
+    var num = 10;
+    document.write(txt.length);
+    //문자열에서 .length를 찍어서 사용하는 것이랑, 숫자에서 .length를 찍어서 사용하는거 다르다.
+    //그 이유는 바로 "멤버 접근연산자"때문
+    document.write('<br>');
+    document.write(txt.indexOf('CEO')); //문자열 내에 특정한 문자열의 index값을 리턴
+    document.write('<br>');
+    document.write(txt.slice(0, 7)); //paullab만 출력 마지막숫자는 제외 slice(start, end-1)로 기억
+    document.write('<br>');
+    document.write(txt.replace('CEO','CTO'));
+    document.write('<br>');
+    document.write(txt.toUpperCase()); //대문자로 소문자는 toLowerCase()
+    document.write('<br>');
+    document.write(num.toFixed(6)); //소수의 자리수의 길이를 제한
+    document.write('<br>');
+    document.write(num.toString()+num.toString()); //형변환 숫자를 문자
+    document.write('<br>');
+    document.write(Math.PI);
+    document.write('<br>');
+    document.write(Math.max(10,20,30));
+    document.write('<br>');
+    document.write(Math.random()*10);
+    document.write('<br>');
+  </script>
+</body>
+
+</html>
