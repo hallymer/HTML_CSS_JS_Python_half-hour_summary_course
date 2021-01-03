@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    /*
+    var은 function scope를 가지고 let, const는 block scope를 가진다.
+    따라서, 아래처럼
+    if (i > 5) {
+        let j = 100;
+    } else {
+      let j = 1000;
+    }
+    document.write(j);
+    이렇게 하면 출력이 안됨!
+     */
+    var i = 10;
+    const k = 10000;
+    if (i > 5) {
+      const j = 100;
+    } else {
+      const j = 1000;
+    }
+    function f(){
+      i += 100000;
+    }
+    f()
+    document.write(i);
+  </script>
+</body>
+
+</html>
