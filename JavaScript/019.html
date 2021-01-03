@@ -32,13 +32,22 @@
     }
     $('#two').click(
       function f() {
-        $('h1.one.three').html('반갑습니다~!!!!');
+        $('h1:odd').html('반갑습니다~!!!!');
       }
     );
     // $(#id) id만 선택
     // $(.class) class만 선택
     // $(h1.class) h1에 class의 조합이 된 엘리먼트를 선택
     // $(h1.class.classtwo#idone)
+
+    // 필터(기본필터, 속성필터, 차일드필터, 컨텐츠필터)
+    // :even
+    // :odd
+    // :first
+    // :last
+    // :nth-child(2) //두번째걸 의미
+    // :nth-child(2n) //짝수번째걸 의미
+    // etc
   </script>
 </body>
 
