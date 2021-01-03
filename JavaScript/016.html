@@ -4,12 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <style>
+    p {
+      background-color: skyblue;
+    }
+  </style>
 </head>
 
 <body>
   <h1 id="one">hello world</h1>
+  <p>hello world</p>
+  <button onclick="f()">눌러!!</button>
   <script>
-
+    function f() {
+      document.getElementById('one').innerHTML = '반갑습니다!';
+      document.getElementById('one').style.backgroundColor = 'red';
+    }
   </script>
 </body>
 
