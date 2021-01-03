@@ -15,15 +15,22 @@
   <h1 id="one">hello world</h1>
   <p>hello world</p>
   <button onclick="f()">눌러!!</button>
+  <button id="two" onclick="f()">눌러!!</button>
   <!-- jQuery는
   1. 엘리먼트를 선택할 수 있는 강력한 방법
   2. 선택된 엘리먼트를 효율적으로 제어할 수 있는 방법
   -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script>
     function f() {
-      document.getElementById('one').innerHTML = '반갑습니다!';
+      $('#one').html('반갑습니다~!!!!');
       document.getElementById('one').style.backgroundColor = 'red';
     }
+    $('#two').click(
+      function f() {
+        $('p').html('반갑습니다~!!!!');
+      }
+    );
   </script>
 </body>
 
