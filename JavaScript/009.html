@@ -10,7 +10,24 @@
 
 <body>
   <script>
-
+    var 배열 = [10, 20, 30, 40, 50];
+    document.write(배열[0]);
+    document.write('<br>');
+    document.write(배열[1]);
+    document.write('<br>');
+    document.write(배열.slice(1, 4));
+    document.write('<br>');
+    document.write(배열.pop());
+    document.write('<br>');
+    배열.push(1000);
+    document.write(배열);
+    document.write('<br>');
+    document.write(배열.join('!!'));
+    document.write('<br>');
+    배열.sort(); //사전식 정렬
+    // 배열.reverse(); //사전식 역순
+    document.write(배열); // 10, 1000, 20, 30, 40
+    document.write('<br>');
   </script>
 </body>
 
