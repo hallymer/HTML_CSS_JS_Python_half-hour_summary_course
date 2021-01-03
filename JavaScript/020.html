@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    p {
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="one">hello world one</h1>
+  <h1 class="one two">hello world two</h1>
+  <h1 id="four" class="one two three">hello world three</h1>
+  <h1>hello world four</h1>
+  <h1>hello world five</h1>
+  <h1>hello world six</h1>
+  <p>hello world</p>
+  <button id="two" onclick="f()">눌러!!</button>
+  <!-- jQuery는
+  1. 엘리먼트를 선택할 수 있는 강력한 방법
+  2. 선택된 엘리먼트를 효율적으로 제어할 수 있는 방법
+  -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script>
+    function f() {
+      $('#one').html('반갑습니다~!!!!');
+      document.getElementById('one').style.backgroundColor = 'red';
+    }
+    $('#two').click(
+      function f() {
+        $('h1:first').html('<mark>반갑습니다~!!!!</mark>');
+        $('h1:last').text('<mark>반갑습니다~!!!!</mark>');
+      }
+    );
+    // $(#id) id만 선택
+    // $(.class) class만 선택
+    // $(h1.class) h1에 class의 조합이 된 엘리먼트를 선택
+    // $(h1.class.classtwo#idone)
+
+    // 필터(기본필터, 속성필터, 차일드필터, 컨텐츠필터)
+    // :even
+    // :odd
+    // :first
+    // :last
+    // :nth-child(2) //두번째걸 의미
+    // :nth-child(2n) //짝수번째걸 의미
+    // etc
+  </script>
+</body>
+
+</html>
