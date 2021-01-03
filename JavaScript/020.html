@@ -32,23 +32,20 @@
     }
     $('#two').click(
       function f() {
-        $('h1:first').html('<mark>반갑습니다~!!!!</mark>');
+        $('h1:first').html('<mark>반갑습니다~!!!!</mark>').fadeOut(3000).fadeIn(3000).fadeOut(3000).fadeIn(3000);
         $('h1:last').text('<mark>반갑습니다~!!!!</mark>');
       }
     );
-    // $(#id) id만 선택
-    // $(.class) class만 선택
-    // $(h1.class) h1에 class의 조합이 된 엘리먼트를 선택
-    // $(h1.class.classtwo#idone)
-
-    // 필터(기본필터, 속성필터, 차일드필터, 컨텐츠필터)
-    // :even
-    // :odd
-    // :first
-    // :last
-    // :nth-child(2) //두번째걸 의미
-    // :nth-child(2n) //짝수번째걸 의미
-    // etc
+    // 메서(속성값 변경, DOM 탐색, css, 이벤트, 효과, etc)
+    /*
+    .text
+    .html
+    .val
+    .hide
+    .show
+    .fadeIn
+    .fadeOut
+    */
   </script>
 </body>
 
